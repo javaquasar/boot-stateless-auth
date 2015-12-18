@@ -17,8 +17,10 @@ public class TokenAuthenticationService {
 
 	private final TokenHandler tokenHandler;
 
-	@Autowired
-	public TokenAuthenticationService(@Value("${token.secret}") String secret) {
+//	@Autowired
+//	public TokenAuthenticationService(@Value("${token.secret}") String secret) {
+	public TokenAuthenticationService() {
+		String secret = "9SyECk96oDsTmXfogIieDI0cD/8FpnojlYSUJT5U9I/FGVmBz5oskmjOR8cbXTvoPjX+Pq/T/b1PqpHX0lYm0oCBjXWICA==";
 		tokenHandler = new TokenHandler(DatatypeConverter.parseBase64Binary(secret));
 	}
 
