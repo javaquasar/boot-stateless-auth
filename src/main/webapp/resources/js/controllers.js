@@ -51,10 +51,18 @@ app.controller('AuthCtrl', function ($scope, $http, TokenStorage) {
 		$http.post('/api/login', { username: $scope.username, password: $scope.password }).success(function (result, status, headers) {
 			$scope.authenticated = true;
 			TokenStorage.store(headers('X-AUTH-TOKEN'));
-			
+
 			// For display purposes only
 			$scope.token = JSON.parse(atob(TokenStorage.retrieve().split('.')[0]));
-		});  
+		});
+	};
+
+	$scope.current = function () {
+		$http.get('/api/users/current').success(function (result, status, headers) {
+			// For display purposes only
+			//$scope.current1 = JSON.parse(result);
+			console.log(result);
+		});
 	};
 
 	$scope.logout = function () {
