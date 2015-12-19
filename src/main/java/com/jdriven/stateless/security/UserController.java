@@ -2,6 +2,9 @@ package com.jdriven.stateless.security;
 
 import java.util.List;
 
+import com.jdriven.stateless.security.auth.UserAuthentication;
+import com.jdriven.stateless.security.models.User;
+import com.jdriven.stateless.security.models.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -6,6 +6,7 @@ import static org.junit.Assert.*;
 import java.security.SecureRandom;
 import java.util.Date;
 
+import com.jdriven.stateless.security.models.User;
 import org.junit.Before;
 import org.junit.Test;
 

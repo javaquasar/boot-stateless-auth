@@ -4,8 +4,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.bind.DatatypeConverter;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import com.jdriven.stateless.security.auth.UserAuthentication;
+import com.jdriven.stateless.security.models.User;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 

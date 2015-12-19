@@ -60,8 +60,7 @@ app.controller('AuthCtrl', function ($scope, $http, TokenStorage) {
 	$scope.current = function () {
 		$http.get('/api/users/current').success(function (result, status, headers) {
 			// For display purposes only
-			//$scope.current1 = JSON.parse(result);
-			console.log(result);
+			$scope.current = result;
 		});
 	};
 

@@ -2,6 +2,8 @@ package com.jdriven.stateless.security;
 
 import javax.servlet.Filter;
 
+import com.jdriven.stateless.security.models.User;
+import com.jdriven.stateless.security.models.UserRepository;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

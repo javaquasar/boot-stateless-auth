@@ -1,5 +1,7 @@
-package com.jdriven.stateless.security;
+package com.jdriven.stateless.security.auth;
 
+import com.jdriven.stateless.security.models.User;
+import com.jdriven.stateless.security.models.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AccountStatusUserDetailsChecker;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;

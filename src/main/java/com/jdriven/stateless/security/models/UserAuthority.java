@@ -1,4 +1,4 @@
-package com.jdriven.stateless.security;
+package com.jdriven.stateless.security.models;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
